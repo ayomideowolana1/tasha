@@ -1,0 +1,71 @@
+.hero > div {
+  background-color: #424242;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h3,
+p {
+  max-width: 680px;
+  text-align: center;
+}
+
+h3 {
+  padding: 10px 20px;
+  margin: auto;
+}
+
+.nav {
+  padding: 10px;
+}
+
+.bpx {
+  border: 1px solid #424242;
+}
+
+.features-cont {
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
+}
+
+.feature,
+.category {
+  padding: 10px;
+}
+
+.feature-image {
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+    min-height: 150px;
+}
+
+.category-image {
+  padding: 10px;
+  width: 60%;
+  min-height: 150px;
+  margin: auto;
+}
+
+.slideshow{
+    padding: 10px;
+}
+
+.slideshow>div{
+    margin: auto;
+    min-height: 300px;
+}
+
+.footer>div{
+    padding: 10px;
+    /* min-height: 300px; */
+}
+
+.section{
+    margin-top: 100px;
+}
