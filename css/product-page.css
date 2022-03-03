@@ -1,0 +1,14 @@
+.hero{
+    background-color: #f2f2f2;
+    min-height: 250px;
+    margin: auto;
+}
+
+.products{
+max-width: 1200px;
+margin: auto;
+margin-top: 100px;
+border: 1px solid;
+padding: 10px;
+min-height: 80vh;
+}
