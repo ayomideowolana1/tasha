@@ -1,14 +1,90 @@
-.hero{
-    background-color: #f2f2f2;
-    min-height: 250px;
+.hero {
+  background-color: #f2f2f2;
+  min-height: 250px;
+  margin: auto;
+}
+
+.products {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 10px;
+  border: 1px solid;
+  padding: 10px;
+  /* min-height: 80vh; */
+}
+
+.shop-nav,.shop-body {
+  /* border: 1px solid; */
+  max-width: 1000px;
+  margin: auto;
+}
+
+.shop-nav ul {
+  /* border: 1px solid; */
+  margin: 0px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0px;
+  padding-bottom:10px ;
+}
+
+li{
+    /* padding: 10px; */
+    flex: 1;
     margin: auto;
 }
 
-.products{
-max-width: 1200px;
-margin: auto;
-margin-top: 100px;
-border: 1px solid;
-padding: 10px;
-min-height: 80vh;
+.shop-nav a {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  display: block;
+  background-color: #f2f2f2;
+}
+
+
+.shop-body h3{
+    text-align: left;
+    width: 100%;
+    margin:5px;
+}
+
+.item {
+    /* border: 1px solid; */
+    padding: 10px;
+    color: #424242;
+}
+
+.item img{
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+.item span{
+    /* border: 1px solid; */
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.item div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px; 
+}
+
+.item div button{
+    text-align: center;
+    padding:  10px;
+}
+
+.item > div{
+    background-color: #f2f2f2;
+    padding: 10px;
 }

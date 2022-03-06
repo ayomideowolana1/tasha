@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="./css/index.css" />
     <title>Tasha</title>
   </head>
-  <body >
+  <body>
     <div class="container-fluid" ng-app="">
       <!-- nav -->
       <div class="row nav">
-        <div class="col-3">logo</div>
-        <div class="col-6">
+        <div class="col-3">
+          <img src="/assets/logo.svg" id="logo" alt="" />
+        </div>
+        <div class="col-6 links">
           <a href="/index.html">Home</a>
           <a href="/views/product-page.html">Products</a>
           <a href="/views/about-page.html">About</a>
@@ -22,11 +24,9 @@
         <div class="col-3">login</div>
       </div>
       <!-- hero -->
-      <div class="row hero ">
-        <div class="col-12">
-          <h1>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          </h1>
+      <div class="row hero">
+        <div class="col-12 bg">
+          <h1>PRODUCTS THAT MAKE YOUR HOME COMPLETE</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
             excepturi eum tenetur maiores, provident veritatis est debitis ex
@@ -37,90 +37,130 @@
       </div>
       <!-- features -->
       <div class="row features section">
-        <div class="col-12 bpx t-center">
+        <div class="col-12 t-center">
           <h3>What you get when you shop with Tasha</h3>
+          <hr />
         </div>
         <div class="col-12">
-            <div class="row bpx features-cont">
-                <div class="bpx col-md-3 col-6 feature">
-                    <div class="feature-image bpx"></div>
-                    <div class="feature-text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, maiores!</p>
-                    </div>
-                </div>
-                <div class="bpx col-md-3 col-6 feature">
-                    <div class="feature-image bpx"></div>
-                    <div class="feature-text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, maiores!</p>
-                    </div>
-                </div>
-                <div class="bpx col-md-3 col-6 feature">
-                    <div class="feature-image bpx"></div>
-                    <div class="feature-text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, maiores!</p>
-                    </div>
-                </div>
-                <div class="bpx col-md-3 col-6 feature">
-                    <div class="feature-image bpx"></div>
-                    <div class="feature-text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, maiores!</p>
-                    </div>
-                </div>
+          <div class="row features-cont">
+            <div class="col-md-3 col-6 feature">
+              <div
+                class="feature-image"
+                style="background-image: url('/assets/customer-service.svg')"
+              ></div>
+              <div class="feature-text">
+                <p>24/7 Customer service. Online and on site!</p>
+              </div>
             </div>
+            <div class="col-md-3 col-6 feature">
+              <div
+                class="feature-image"
+                style="background-image: url('/assets//Ellipse\ 2.svg')"
+              ></div>
+              <div class="feature-text">
+                <p>1 Year warranty on all electrical and storage products!</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-6 feature">
+              <div
+                class="feature-image"
+                style="background-image: url('/assets/discount\ \(1\).svg')"
+              ></div>
+              <div class="feature-text">
+                <p>Unbelievable discounts for all our customers!</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <!-- shop by category -->
       <div class="row features section">
-        <div class="col-12 bpx t-center">
+        <div class="col-12 t-center">
           <h3>Shop by category</h3>
+          <hr />
         </div>
         <div class="col-12">
-            <div class="row bpx features-cont">
-                <div class="bpx col-md-3 col-6 category">
-                    <div class="category-image bpx"></div>
-                    <div class="feature-text">
-                        <p>Lorem, ipsum.</p>
-                    </div>
+          <div class="row features-cont">
+            <div class="col-md-3 col-6 category">
+              <a href="#">
+                <div
+                  class="category-image"
+                  style="background-image: url('/assets/cat-cookware.png')"
+                ></div>
+                <div class="feature-text">
+                  <p>Cookware</p>
                 </div>
-                <div class="bpx col-md-3 col-6 category">
-                    <div class="category-image bpx"></div>
-                    <div class="feature-text">
-                        <p>Lorem, ipsum.</p>
-                    </div>
-                </div>
-                <div class="bpx col-md-3 col-6 category">
-                    <div class="category-image bpx"></div>
-                    <div class="feature-text">
-                        <p>Lorem, ipsum.</p>
-                    </div>
-                </div>
-                <div class="bpx col-md-3 col-6 category">
-                    <div class="category-image bpx"></div>
-                    <div class="feature-text">
-                        <p>Lorem, ipsum.</p>
-                    </div>
-                </div>
+              </a>
             </div>
+            <div class="col-md-3 col-6 category">
+              <a href="#">
+                <div
+                  class="category-image"
+                  style="
+                    background-image: url('/assets/cat-refridgeration.png');
+                  "
+                ></div>
+                <div class="feature-text">
+                  <p>Refridgeration</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 col-6 category">
+              <a href="#">
+                <div
+                  class="category-image"
+                  style="background-image: url('/assets/cat-appliances.png')"
+                ></div>
+                <div class="feature-text">
+                  <p>Appliances</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 col-6 category">
+              <a href="#">
+                <div
+                  class="category-image"
+                  style="background-image: url('/assets/cat-storage.png')"
+                ></div>
+                <div class="feature-text">
+                  <p>Storage</p>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
       <!-- slideshow -->
       <div class="row slideshow section">
-          <div class="col-6 bpx "></div>
+        <div>
+          <h3>Upcoming Products</h3>
+          <hr />
+        </div>
+        <div class="col-6 bpx" id="slideshow"></div>
       </div>
       <!-- footer -->
       <div class="row footer section" id="footer">
-          <div class="col-md-3 col-12 bpx">
-              <h4>About</h4>
-              <p>Lorem, ipsum.</p>
-              <p>Lorem, ipsum.</p>
-              <p>Lorem, ipsum.</p>
+        <div class="col-md-3 col-12 ">
+          <h4>About</h4>
+          <p>Introduction</p>
+          <p>Affiliated brands</p>
+          <p>Terms and Conditions</p>
+        </div>
+        <div class="col-md-4 col-12 ">
+          <h4>Contact</h4>
+          <p>
+            <a href="mailto:talkwithtasha@gmail.com">talkwithtasha@gmail.com</a>
+          </p>
+          <p>
+            +234-703-343-9661, +234-903-343-7761
+          </p>
+        </div>
+        <div class="col-md-4 col-12 ">
+          <h4>Subscribe to our Newsletter</h4>
+          <div>
+            <input type="text" placeholder="Email"><button>Subscribe</button>
           </div>
-          <div class="col-md-6 col-12 bpx">
-              <h4>Contact</h4>
-          </div>
-          <div class="col-md-3 col-12 bpx">
-              <h4>Subscribe to our Newsletter</h4>
-          </div>
+        </div>
       </div>
     </div>
     <script src="./js/angular-min.js"></script>

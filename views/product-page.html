@@ -9,12 +9,14 @@
     <link rel="stylesheet" href="/css/product-page.css" />
     <title>Tasha</title>
   </head>
-  <body>
+  <body ng-app="store" ng-controller="storeCtr">
     <div class="container-fluid">
-        <!-- nav -->
+      <!-- nav -->
       <div class="row nav">
-        <div class="col-3">logo</div>
-        <div class="col-6">
+        <div class="col-3">
+          <img src="/assets/logo.svg" id="logo" alt="" />
+        </div>
+        <div class="col-6 links">
           <a href="/index.html">Home</a>
           <a href="/views/product-page.html">Products</a>
           <a href="/views/about-page.html">About</a>
@@ -23,35 +25,72 @@
         <div class="col-3">login</div>
       </div>
       <!-- hero -->
-      <div class="row ">
-          <div class="col-8 hero section">
-
-          </div>
+      <div class="row">
+        <!-- <div class="col-8 hero section"></div> -->
       </div>
       <!-- products  -->
       <div class="row products section">
-        <div class="col-12 nav">
-            nav
+        <div class="col-12">
+          <div class="shop-nav">
+            <ul>
+              <li ng-repeat="cat in categories">
+                <a href="#{{cat.name}}">{{cat.name}}</a>
+              </li>
+              <li><a href="">Cart</a></li>
+            </ul>
+            <hr />
+          </div>
         </div>
-        <div class="col-12 body">
-            body
+        <div class="col-12">
+          <div class="shop-body">
+            <div class="row">
+              <div class="col-12" ng-repeat="cat in categories">
+                <div id="{{cat.name}}">
+                  <h3>{{cat.name}}</h3>
+                  <hr />
+                  <div class="col-12">
+                    <div class="row">
+                      <div class="col-3 item" ng-repeat="item in cat.items">
+                        <div>
+                          <img src="{{item.url}}" alt="" />
+                          <div>
+                            <span>{{item.name}}</span>
+                            <button>Add to cart</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <!-- footer -->
       <div class="row footer section" id="footer">
-          <div class="col-md-3 col-12 bpx">
-              <h4>About</h4>
-              <p>Lorem, ipsum.</p>
-              <p>Lorem, ipsum.</p>
-              <p>Lorem, ipsum.</p>
+        <div class="col-md-3 col-12">
+          <h4>About</h4>
+          <p>Introduction</p>
+          <p>Affiliated brands</p>
+          <p>Terms and Conditions</p>
+        </div>
+        <div class="col-md-4 col-12">
+          <h4>Contact</h4>
+          <p>
+            <a href="mailto:talkwithtasha@gmail.com">talkwithtasha@gmail.com</a>
+          </p>
+          <p>+234-703-343-9661, +234-903-343-7761</p>
+        </div>
+        <div class="col-md-4 col-12">
+          <h4>Subscribe to our Newsletter</h4>
+          <div>
+            <input type="text" placeholder="Email" /><button>Subscribe</button>
           </div>
-          <div class="col-md-6 col-12 bpx">
-              <h4>Contact</h4>
-          </div>
-          <div class="col-md-3 col-12 bpx">
-              <h4>Subscribe to our Newsletter</h4>
-          </div>
+        </div>
       </div>
     </div>
+    <script src="/js/angular-min.js"></script>
+    <script src="/js/index.js"></script>
   </body>
 </html>
