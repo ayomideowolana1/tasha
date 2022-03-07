@@ -34,16 +34,16 @@
           <div class="shop-nav">
             <ul>
               <li ng-repeat="cat in categories">
-                <a href="#{{cat.name}}">{{cat.name}}</a>
+                <a href="#{{cat.name}}" ng-click="showProducts()">{{cat.name}}</a>
               </li>
-              <li><a href="">Cart</a></li>
+              <li><a href="" ng-click="showCart()">Cart <span>{{length}}</span> </a></li>
             </ul>
             <hr />
           </div>
         </div>
         <div class="col-12">
           <div class="shop-body">
-            <div class="row">
+            <div class="row" id="products">
               <div class="col-12" ng-repeat="cat in categories">
                 <div id="{{cat.name}}">
                   <h3>{{cat.name}}</h3>
@@ -55,7 +55,8 @@
                           <img src="{{item.url}}" alt="" />
                           <div>
                             <span>{{item.name}}</span>
-                            <button>Add to cart</button>
+                            <p class="item-price">${{item.price}}</p>
+                            <button ng-click="addToCart(item)">Add to cart</button>
                           </div>
                         </div>
                       </div>
@@ -63,6 +64,34 @@
                   </div>
                 </div>
               </div>
+            </div>
+            <div class="row" id="cart">
+              <div class="col-12">
+                <div class="cart-header">
+                <h3>Your Cart</h3>
+                <h4>Total: ${{total}}</h4>
+              </div>
+              </div>
+              <div class="col-12">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-12" ng-hide="length > 0" ng-show="length < 0">
+                      <p style="color: #424242; text-align: center; padding: 10px;">You have no items in your cart </p>
+                    </div>
+                    <div class="col-3 item" ng-repeat="item in cart">
+                      <div>
+                          <img src="{{item.url}}" alt="" />
+                          <div>
+                            <span>{{item.name}}</span>
+                            <p class="item-price">${{item.price}}</p>
+                            <button ng-click="removeFromCart(item)">Remove from cart</button>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>

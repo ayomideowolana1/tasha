@@ -88,3 +88,21 @@ li{
     background-color: #f2f2f2;
     padding: 10px;
 }
+
+.item-price{
+  color: #424242;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#cart{
+  display: none;
+}
+
+
+.cart-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid #424242;
+}

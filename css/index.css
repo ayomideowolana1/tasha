@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 #logo {
   max-width: 60px;
   height: auto;
@@ -7,11 +11,14 @@
   background-color: #424242;
   height: 70vh;
   background-image: url(/assets/hero-1.png);
+  background-size: cover;
   background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: auto;
+  max-width: 1400px;
 }
 
 h1,
@@ -147,7 +154,30 @@ hr {
 
 #slideshow {
   min-height: 300px;
+  padding: 0px;
+  overflow: hidden;
 }
+#slideshow img{
+  width: 100%;
+  min-height: 300px;
+  padding: 0px;
+  overflow: hidden;
+}
+#slideshow > div {
+  min-height: 300px;
+  padding: 0px;
+}
+
+
+[data-component="slideshow"] .slide {
+	display: none;
+  text-align: center;
+}
+
+[data-component="slideshow"] .slide.active {
+	display: block;
+}
+
 
 #footer{
   background-color: #e4e8e5;

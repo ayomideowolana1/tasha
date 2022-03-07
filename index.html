@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/index.css" />
     <title>Tasha</title>
   </head>
-  <body>
+  <body onload="load()">
     <div class="container-fluid" ng-app="">
       <!-- nav -->
       <div class="row nav">
@@ -82,7 +82,7 @@
         <div class="col-12">
           <div class="row features-cont">
             <div class="col-md-3 col-6 category">
-              <a href="#">
+              <a href="/views/product-page.html#Cookware">
                 <div
                   class="category-image"
                   style="background-image: url('/assets/cat-cookware.png')"
@@ -93,7 +93,7 @@
               </a>
             </div>
             <div class="col-md-3 col-6 category">
-              <a href="#">
+              <a href="/views/product-page.html#Refridgeration">
                 <div
                   class="category-image"
                   style="
@@ -106,7 +106,7 @@
               </a>
             </div>
             <div class="col-md-3 col-6 category">
-              <a href="#">
+              <a href="/views/product-page.html#Appliances">
                 <div
                   class="category-image"
                   style="background-image: url('/assets/cat-appliances.png')"
@@ -117,7 +117,7 @@
               </a>
             </div>
             <div class="col-md-3 col-6 category">
-              <a href="#">
+              <a href="/views/product-page.html#Food%20storage">
                 <div
                   class="category-image"
                   style="background-image: url('/assets/cat-storage.png')"
@@ -136,29 +136,62 @@
           <h3>Upcoming Products</h3>
           <hr />
         </div>
-        <div class="col-6 bpx" id="slideshow"></div>
+        <div class="col-6 bpx" id="slideshow">
+          <div id="slideshow-example" data-component="slideshow">
+            <div role="list">
+              <div class="slide">
+                <img
+                  src="https://images.pexels.com/photos/531446/pexels-photo-531446.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://images.pexels.com/photos/1393382/pexels-photo-1393382.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://images.pexels.com/photos/50676/coffee-mugs-t-brown-drink-50676.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://images.pexels.com/photos/563067/pexels-photo-563067.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://images.pexels.com/photos/7879775/pexels-photo-7879775.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- footer -->
       <div class="row footer section" id="footer">
-        <div class="col-md-3 col-12 ">
+        <div class="col-md-3 col-12">
           <h4>About</h4>
           <p>Introduction</p>
           <p>Affiliated brands</p>
           <p>Terms and Conditions</p>
         </div>
-        <div class="col-md-4 col-12 ">
+        <div class="col-md-4 col-12">
           <h4>Contact</h4>
           <p>
             <a href="mailto:talkwithtasha@gmail.com">talkwithtasha@gmail.com</a>
           </p>
-          <p>
-            +234-703-343-9661, +234-903-343-7761
-          </p>
+          <p>+234-703-343-9661, +234-903-343-7761</p>
         </div>
-        <div class="col-md-4 col-12 ">
+        <div class="col-md-4 col-12">
           <h4>Subscribe to our Newsletter</h4>
           <div>
-            <input type="text" placeholder="Email"><button>Subscribe</button>
+            <input type="text" placeholder="Email" /><button>Subscribe</button>
           </div>
         </div>
       </div>
